@@ -1,7 +1,7 @@
 # Projet: Application Web de Messagerie Sécurisée
 
 ## Auteurs
-- Code permanent, nom, prénom
+- BOUO10022006, Olivier Bouhours
 - Code permanent, nom, prénom
 
 ## Compatibilité
