@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messagerie sécurisée</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Écran de connexion / inscription -->
+  <section id="auth">
+    <h1>Messagerie sécurisée</h1>
+    <form id="auth-form">
+      <input id="username" placeholder="Nom d'utilisateur" autocomplete="username" required>
+      <input id="password" type="password" placeholder="Mot de passe" autocomplete="current-password" required>
+      <div class="buttons">
+        <button type="submit" data-action="login">Se connecter</button>
+        <button type="submit" data-action="register">S'inscrire</button>
+      </div>
+      <p id="auth-msg"></p>
+    </form>
+  </section>
+
+  <!-- Écran de discussion -->
+  <section id="chat" hidden>
+    <header>
+      <span>Connecté : <strong id="me"></strong></span>
+      <button id="logout">Déconnexion</button>
+    </header>
+    <div class="layout">
+      <aside>
+        <h2>En ligne</h2>
+        <ul id="users"></ul>
+      </aside>
+      <main>
+        <div id="messages"></div>
+        <form id="send-form">
+          <input id="text" placeholder="Choisissez un destinataire…" disabled autocomplete="off">
+          <button disabled>Envoyer</button>
+        </form>
+      </main>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
